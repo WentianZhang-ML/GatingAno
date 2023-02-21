@@ -35,7 +35,7 @@ The proposed GatingAno method is trained through two steps:
     For example, to generate the image-level label of IDRiD dataset, you can run
     `python3 data_find.py --dataset 'IDRiDc' --path './dataset/' `
     
-    And then you will get lists containing images and corresponding labels in './label/'. 
+    And then you will get lists containing images and corresponding labels in './label/IDRiDc/'. 
     
 *   Training and testing model
     
