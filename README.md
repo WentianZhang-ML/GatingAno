@@ -32,16 +32,18 @@ The proposed GatingAno method is trained through two steps:
     --path {data dir}
     ```
     
-    For example, to generate the image-level label of IDRiD dataset
+    For example, to generate the image-level label of IDRiD dataset, you can run
     `python3 data_find.py --dataset 'IDRiDc' --path './dataset/' `
     
-    And then you can get lists containing images and corresponding labels in './label/'. 
+    And then you will get lists containing images and corresponding labels in './label/'. 
     
 *   Training and testing model
+    
+    For example, to train pixel-level anomaly detection task on ADAM dataset, you can run
      ```
      python3 main.py \
-     --dataset ['IDRiD'/'IDRiDc'/'ADAM'/'ADAMc'] \
-     --datadir './labels/' \
-     --lr 1e-4 \
-     --level '['image'/'pixel']
+     --dataset 'ADAM' \
+     --datadir './labels/ADAM/' \
+     --lr 1e-3 \
+     --level 'pixel' ;
      ```
