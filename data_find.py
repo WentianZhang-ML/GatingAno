@@ -19,7 +19,6 @@ from skimage.filters import gaussian
 parser = argparse.ArgumentParser(description='manual to this script')
 parser.add_argument("--dataset", type=str, default='IDRiD', help='[IDRiD/ADAM]')
 parser.add_argument("--path", type=str, default='./dataset/', help='data dir')
-parser.add_argument("--level", type=str, default='image', help='[image/pixel]')
 
 def IDRiD_hog_generate(data_dir):
     path_list = glob.glob(data_dir+'*/*/*.jpg')
